@@ -1,0 +1,60 @@
+.menu_icon, .search_icon{
+  width:16px;
+  height: 16px;
+}
+
+.logo_icon {
+  width:195px;
+  height: 26px;
+}
+
+.drop_icon {
+  width: 13px;
+  height: 8px;
+}
+
+.facebook_icon {
+  width: 7px;
+  height: 15px;
+}
+
+.twitter_icon {
+  width: 13px;
+  height: 10px;
+}
+
+.mail_icon {
+  width: 15px;
+  height: 9px;
+}
+
+.share_icon {
+  width: 14px;
+  height: 14px;
+}
+
+.pennant_icon {
+  width: 16px;
+  height: 25px;
+}
+
+.delivery_icon {
+  width: 13px;
+  height: 13px;
+}
+
+.digital_icon{
+  width: 13px;
+  height: 13px;
+}
+
+
+.crossroad_icon {
+  width: 13px;
+  height: 13px;
+}
+
+.cooking_icon{
+  width: 13px;
+  height: 13px;
+}
