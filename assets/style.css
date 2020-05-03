@@ -5,6 +5,13 @@ html{
   font-family: sans-serif;
 }
 
+
+@font-face {
+  font-family: CheltenhamBT-Roman;
+  src:url(fonts/Cheltenham_Bold_Italic_1.otf);
+}
+
+
 /* Icons */
 .menu_icon, .search_icon{
   width:16px;
@@ -39,8 +46,8 @@ html{
 }
 
 .share_icon {
-  width: 14px;
-  height: 14px;
+  width: 15px;
+  height: 15px;
 }
 
 .pennant_icon {
@@ -72,16 +79,14 @@ html{
 /* navbar */
 
 nav {
-  border-bottom: solid;
+  border-bottom: 1px solid  #E2E2E2;
   display: flex;
   justify-content: space-between;
-  padding: 12px 20px 3px;
+  padding: 10px 19px 3px 19px;
 
 }
 
-.subscribe_btn {
-  display: inline-block;
-}
+
 
 .menu_icon {
   margin-right: 20px;
@@ -94,23 +99,172 @@ nav {
 }
 
 .subscribe_btn {
+  display: inline-block;
+
+  width: 95px;
   background-color: #326891;
   color: white;
-  padding: 12px 12px 7px  12px;
+  padding: 12px 8px;
   font-size: 11px;
   font-weight: 700;
   border-radius: 2px;
-  margin-right: 15px;
   position: relative;
   bottom: 3px;
-
-  display: inline-block;
-
+  margin-right: 10px;
 }
 
 .account {
 font-size: 11px;
 font-weight: 500;
 letter-spacing: .22px;
+}
+
+
+h1{
+font-family: CheltenhamBT-Roman;
+font-size: 2.2rem;
+line-height: 3rem;
+font-weight: 100;
+letter-spacing: .5px;
+width: 600px;
+height: 95px;
+margin:auto;
+}
+
+.main_picture{
+  margin:50px;
+  width: 945px;
+  margin:auto;
+}
+.main_picture img {
+width:100%;
+}
+
+.main_picture figcaption{
+  font-size: .9rem;
+  line-height: 1.25;
+  color:#666;
+  max-width: 720px;
+}
+
+.data .author {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.data {
+width: 620px;
+margin: auto;
+margin-top: 50px;
+font-size: 12px;
+margin-bottom: 50px;
+}
+
+.align{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+	
+}
+
+.wrapper_data {
+  
+  margin-top: 20px;
+}
+
+.wrapper_media {
+	
+}
+
+
+
+ .media{
+  display: flex;
+  width: 150px;
+  height: 43px;
+  align-items: center;
+  
+ 
+}
+
+
+.media .circle{
+ 
+ background: #eee;
+ width: 27px; 
+ height: 27px;
+ margin: 3px;
+ display: flex;
+ justify-content:center;
+ align-items: center;	
+ border-radius: 100%;
+ box-sizing: border-box;
+ 
+}
+
+
+.media  div.circle:hover {
+
+ background: white;
+ border: solid 1px #ccc;
+
 
 }
+
+.tag_icons{
+	width: 70px;
+	display: flex;
+	margin-left: 10px;
+	justify-content: space-between;
+}
+
+
+.tag_icons .counter {
+	
+	border: solid 1px;
+	width: 36px;
+	height: 24px;
+	display: flex;
+	justify-content: center;
+	 border-radius: 4px;
+	 margin-bottom: 2px;
+}
+
+
+.counter .number{
+	position: relative;
+	top: 10px;
+}
+
+
+
+ .tag_icons div.counter::after{
+display: block;
+position: relative;
+top: 25px;
+right: 14px;
+width: 0;
+height: 0;
+border-top: black solid 3px;
+border-right: solid 5px;
+border-left: solid transparent 5px;
+border-bottom: solid transparent 3px;
+content: "";
+}
+
+
+ .tag_icons div.counter::before{
+display: block;
+position: relative;
+top: 23px;
+left: 15.5px;
+width: 0;
+height: 0;
+border-top:  solid  white 3px;
+border-right: solid white 5px;
+border-left: solid transparent 5px;
+border-bottom: solid transparent 3px;
+content: "";
+z-index: 1;
+}
+
