@@ -393,6 +393,6 @@ figure.bicep2_telescop figcaption {
 	padding-right: 4px;
 }
 
-.article_footer p .nth-child(2).span::hover{
+.article_footer p span.nth-child(2)::hover{
 decoration: none;
 }
