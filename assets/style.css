@@ -1,14 +1,50 @@
 
 /* general */
 
-html{
-  font-family: sans-serif;
-}
 
 
 @font-face {
-  font-family: CheltenhamBT-Roman;
-  src:url(fonts/Cheltenham_Bold_Italic_1.otf);
+  font-family: cheltenham;
+  src:url(fonts/cheltenham.otf);
+}
+
+html{
+	font-family: georgia, serif;
+}
+
+h1{
+font-size: 2.2rem;
+line-height: 3rem;
+font-weight: 100;
+letter-spacing: .5px;
+width: 600px;
+height: 95px;
+margin:auto;
+font-family: cheltenham;
+}
+
+h2{
+	font-size: 1.35rem;
+	font-weight: 700;
+	
+}
+
+h3{
+	font-size: 1.25rem;
+	color: #333;
+	font-weight:700;	
+}
+
+
+
+.content p{
+	font-size: 1.25rem;
+	font-weight: 400;
+	line-height: 1.87rem;
+	max-width: 100%;
+	color: #333;
+	margin: 15px auto;
+	font-family: Georgia, serif;
 }
 
 
@@ -100,8 +136,7 @@ nav {
 
 .subscribe_btn {
   display: inline-block;
-
-  width: 95px;
+  /*width: 95px;*/
   background-color: #326891;
   color: white;
   padding: 12px 8px;
@@ -120,16 +155,6 @@ letter-spacing: .22px;
 }
 
 
-h1{
-font-family: CheltenhamBT-Roman;
-font-size: 2.2rem;
-line-height: 3rem;
-font-weight: 100;
-letter-spacing: .5px;
-width: 600px;
-height: 95px;
-margin:auto;
-}
 
 .main_picture{
   margin:50px;
@@ -147,6 +172,7 @@ width:100%;
   max-width: 720px;
 }
 
+/* media links */
 .data .author {
   font-size: 15px;
   font-weight: 700;
@@ -171,11 +197,6 @@ margin-bottom: 50px;
   
   margin-top: 20px;
 }
-
-.wrapper_media {
-	
-}
-
 
 
  .media{
@@ -207,8 +228,12 @@ margin-bottom: 50px;
 
  background: white;
  border: solid 1px #ccc;
+}
 
+.tag_icons div.pennant:hover {
 
+	
+	
 }
 
 .tag_icons{
@@ -234,6 +259,7 @@ margin-bottom: 50px;
 .counter .number{
 	position: relative;
 	top: 10px;
+	font-family: courier;
 }
 
 
@@ -268,3 +294,105 @@ content: "";
 z-index: 1;
 }
 
+/* Main Content */
+
+.content {
+	width: 620px;
+	margin: auto;
+	
+}
+
+
+
+figure.inflation_theory{
+	width: 945px;
+	margin: auto;
+	font-size: .815rem;
+	line-height: 1.125rem;
+
+	
+}
+
+.wrapper_inflation_theory{
+	background-image: url(images/inflation_theory.png);
+	background-repeat: no-repeat; 
+	background-position: 0% 0%;
+	background-size: contain;
+	width: 100%; 
+	height: 596px;
+	margin: auto;
+	display: block;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+}
+
+
+.dummy_figure{
+	height: 150px;
+	
+}
+
+figure.inflation_theory figcaption{
+	margin-top:50px;
+	color: #333;
+	font-weight:500;
+	font-size: .875rem;
+	
+	
+}
+
+figure.inflation_theory figcaption::before{
+	display: block;
+	width: 70px; 
+	height:1 px;
+	border-top: solid.5px;
+	content: "";
+	position: relative;
+	bottom: 15px;
+}
+
+figure.bicep2_telescop{
+	width: 620px;
+	margin: auto;
+	font-size: .815rem;
+	line-height: 1.125rem;
+	
+}
+
+
+figure.bicep2_telescop img{
+	width: 100%;
+	margin: auto;
+}
+
+figure.bicep2_telescop figcaption {
+	color: #666;
+	font-size: 13px;
+	line-height: 18px;
+	
+}
+
+/* aside */
+
+.article_footer  p{
+	font-size: .8rem;
+	line-height:1rem;
+	color: #666;
+}
+
+.article_footer span{
+	text-decoration: underline;
+	margin: auto 2px;
+}
+
+.article_footer p span:nth-child(2){
+	border-left: solid 1px;
+	border-right: solid 1px;
+	padding-left:4px;
+	padding-right: 4px;
+}
+
+.article_footer p .nth-child(2).span::hover{
+decoration: none;
+}
