@@ -8,8 +8,13 @@
   src:url(fonts/cheltenham.otf);
 }
 
+*{
+	box-sizing: border-box;
+}
+
 html{
 	font-family: georgia, serif;
+	
 }
 
 h1{
@@ -30,7 +35,7 @@ h2{
 }
 
 h3{
-	font-size: 1.25rem;
+	font-size: 16px;
 	color: #333;
 	font-weight:700;	
 }
@@ -396,3 +401,122 @@ figure.bicep2_telescop figcaption {
 .article_footer p span.nth-child(2)::hover{
 decoration: none;
 }
+
+.aside_wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+}
+
+
+.read_comments{
+	
+	width: 330px; 
+	height: 36px;
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	background: #326891;
+	color: white;
+	border-radius: 3px;
+}
+
+.read_comments span {
+	text-decoration: none;
+}
+
+/* featured section */
+
+.featured{ 
+width: 100%;
+display:flex;
+padding:50px 3%; 
+}
+
+.featured_left{
+	width:66.66%;	
+}
+
+.featured_right{
+	width: 33.33%;	
+}
+
+.more_wrapper{
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 18px;
+	justify-content:space-between;  
+	margin-top: 20px; 
+}
+
+
+.more_wrapper div:nth-child(3n+2){
+	margin: 0 auto 0 auto;
+}
+
+
+
+.related_articles img{
+	width: 100%;;
+}
+
+
+.featured h3{
+	padding:20px 0 0; 
+	margin-top: 20px;
+	border-top: 1px solid;
+	color: black;
+}
+
+.featured figcaption{
+	color: #999; 
+	display: flex; 
+	justify-content: right; 
+	font-size: .625rem;
+	margin: 5px auto; 
+}
+
+.featured .description{
+	font-size: 1.125rem;
+	line-height: 22px;
+}
+
+.featured .date{
+	font-size: 12px;
+	color: #999;
+	letter-spacing: 0.3px; 
+	margin-top: 2px; 
+}
+
+.picks_wrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	margin-top: 20px;
+}
+
+.picks_wrapper img {
+	width: 100%;
+}
+
+
+.most_popular{
+	margin-left: 30px;
+	max-width: 315px;
+}
+
+.most_popular_wrapper{
+	margin-top: 20px; 
+	font-size: 1.18rem;
+	line-height: 1.43rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 10px;
+}
+
+.most_popular p{
+	border-top: 1px solid  #E2E2E2;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
