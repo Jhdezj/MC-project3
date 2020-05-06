@@ -272,7 +272,7 @@ margin-bottom: 50px;
  .tag_icons div.counter::after{
 display: block;
 position: relative;
-top: 25px;
+top: 23px;
 right: 14px;
 width: 0;
 height: 0;
@@ -287,7 +287,7 @@ content: "";
  .tag_icons div.counter::before{
 display: block;
 position: relative;
-top: 23px;
+top: 21px;
 left: 15.5px;
 width: 0;
 height: 0;
@@ -429,16 +429,17 @@ decoration: none;
 
 .featured{ 
 width: 100%;
-display:flex;
-padding:50px 3%; 
+display:grid;
+grid-template-columns: 2.15fr .85fr;
+padding:50px calc(3% + 40px); 
 }
 
 .featured_left{
-	width:66.66%;	
+
 }
 
 .featured_right{
-	width: 33.33%;	
+	
 }
 
 .more_wrapper{
@@ -520,3 +521,121 @@ padding:50px 3%;
 	padding-bottom: 10px;
 }
 
+
+/* footer */
+
+
+footer{ 
+width: 100%;
+padding:50px calc(3% + 40px); 
+
+}
+
+.logo_icon_footer{
+	width: 184px;
+	height: 44px;
+	
+}
+
+.footer_logo{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer_wrapper{
+	display: flex; 
+	justify-content: space-between;
+}
+
+
+
+footer .home{
+	color: #567B95;
+	font-weight: 400;
+	line-height: 11px;
+	font-size: 11px;
+}
+
+footer::before{
+	border-top: 1px solid #e2e2e2;
+	border-bottom: 1px solid #e2e2e2;
+	content: "";
+	display: block;
+	height: 2px;
+}
+
+.list_title{
+	color: #333;
+	font-size: 13px;
+	font-weight: 700;	
+
+	
+}
+
+.footer_wrapper .news li,
+.footer_wrapper .opinion li,
+.footer_wrapper .arts li,
+.footer_wrapper .living li,
+.footer_wrapper .more li {
+	height: 23px;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+
+.subscribe > li:first-child{
+	height: 23px;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.subscribe li:nth-child(2) > ul > li {
+	font-size: 16px;
+	font-weight: 700;
+	font-size: 16px;
+	height: 25px;
+	
+}
+
+.subscribe > li:nth-child(2) > ul > li img {
+	margin-right: 3px;
+}
+
+.subscribe > li:nth-child(3), 
+.subscribe > li:nth-child(4){
+	margin-top:15px;	
+
+}
+.subscribe > li:nth-child(3) > ul > li,
+.subscribe > li:nth-child(4) > ul > li {
+	font-weight: 500;
+	font-size: 11px;
+	height: 23px;
+	line-height: 21px;
+}
+
+.subscribe > li:nth-child(3){
+	border-bottom: solid  #E2E2E2 1px;	
+}
+
+.subscribe {
+	border-left: solid #E2E2E2 1px;	
+	padding-left: 10px;
+}
+
+.contact_us {
+	display: flex;
+	font-weight: 500;
+	font-size: 11px;
+	height: 23px;
+	line-height: 21px;
+	border-top: solid #E2E2E2 1px;	
+	margin-top: 10px;
+}
+
+.contact_us li {
+	margin: 10px;
+	color: #666;
+}
