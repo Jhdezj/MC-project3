@@ -2,7 +2,6 @@
 /* general */
 
 
-
 @font-face {
   font-family: cheltenham;
   src:url(fonts/cheltenham.otf);
@@ -14,7 +13,8 @@
 
 html{
 	font-family: georgia, serif;
-	
+	min-width: 1300px;
+	max-width: 1500px;
 }
 
 h1{
