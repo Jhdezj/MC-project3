@@ -11,11 +11,30 @@
 	box-sizing: border-box;
 }
 
+a,
+a:visited,
+a:focus,
+a:active {
+  color: inherit;
+  outline: 0;
+  text-decoration: none;
+}
+
+.underline a:hover{
+	text-decoration: underline;
+}
+
 html{
 	font-family: georgia, serif;
+	font-size: 15px;
 	min-width: 1300px;
 	max-width: 1500px;
 }
+
+body{
+	font-size: 20.5%;
+}
+
 
 h1{
 font-size: 2.2rem;
@@ -124,6 +143,10 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 10px 19px 3px 19px;
+	position: sticky; 
+	top: 0;
+	z-index: 1;
+	background: white;
 
 }
 
@@ -148,7 +171,7 @@ nav {
   font-size: 11px;
   font-weight: 700;
   border-radius: 2px;
-  position: relative;
+  /*position: relative;*/
   bottom: 3px;
   margin-right: 10px;
 }
@@ -178,10 +201,20 @@ width:100%;
 }
 
 /* media links */
-.data .author {
+.data .author  {
   font-size: 15px;
   font-weight: 700;
+   color: #333;
 }
+
+.data .author a {
+  text-decoration: underline #CCC;
+}
+
+.data .author a:hover{
+	text-decoration: none;
+}
+
 
 .data {
 width: 620px;
@@ -256,24 +289,18 @@ margin-bottom: 50px;
 	height: 24px;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	 border-radius: 4px;
 	 margin-bottom: 2px;
+	 position: relative;
 }
-
-
-.counter .number{
-	position: relative;
-	top: 10px;
-	font-family: courier;
-}
-
 
 
  .tag_icons div.counter::after{
 display: block;
-position: relative;
+position: absolute;
 top: 23px;
-right: 14px;
+right: 11px;
 width: 0;
 height: 0;
 border-top: black solid 3px;
@@ -286,9 +313,9 @@ content: "";
 
  .tag_icons div.counter::before{
 display: block;
-position: relative;
+position: absolute;
 top: 21px;
-left: 15.5px;
+left: 12.5px;
 width: 0;
 height: 0;
 border-top:  solid  white 3px;
@@ -297,6 +324,7 @@ border-left: solid transparent 5px;
 border-bottom: solid transparent 3px;
 content: "";
 z-index: 1;
+background: color: blue;
 }
 
 /* Main Content */
@@ -402,6 +430,10 @@ figure.bicep2_telescop figcaption {
 decoration: none;
 }
 
+.article_footer  span:hover{
+	text-decoration: none;
+}
+
 .aside_wrapper{
 	display: flex;
 	justify-content: space-between;
@@ -416,16 +448,28 @@ decoration: none;
 	display: flex;
 	justify-content: center;
 	text-decoration: none;
-	background: #326891;
+	background: #567B95;
 	color: white;
 	border-radius: 3px;
+	font-size:0.8125rem;
+	font-weight: 600px;
+	letter-spacing: .05rem;
 }
 
 .read_comments span {
 	text-decoration: none;
 }
 
+div.read_comments:hover{
+	background:#326891;
+	
+	
+}
 /* featured section */
+
+.featured a:hover{
+	color: #666
+}
 
 .featured{ 
 width: 100%;
@@ -524,7 +568,13 @@ padding:50px calc(3% + 40px);
 
 /* footer */
 
+footer a:hover{
+	text-decoration: underline;
+}
 
+.home a:hover{
+	text-decoration: none;
+}
 footer{ 
 width: 100%;
 padding:50px calc(3% + 40px); 
