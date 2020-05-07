@@ -1,11 +1,11 @@
 
 /* general */
 
-
+/*
 @font-face {
   font-family: cheltenham;
-  src:url('fonts/cheltenham.otf');
-}
+  src:url(fonts/cheltenham.otf);
+}*/
 
 *{
 	box-sizing: border-box;
@@ -35,12 +35,13 @@ html{
 h1{
 font-size: 2.2rem;
 line-height: 3rem;
-font-weight: 100;
+font-weight: 700;
+font-style: italic;
 letter-spacing: .5px;
 width: 600px;
 height: 95px;
 margin:auto;
-font-family: cheltenham;
+/*font-family: cheltenham;*/
 }
 
 h2{
