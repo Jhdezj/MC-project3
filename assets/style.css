@@ -47,13 +47,13 @@ margin:auto;
 h2{
 	font-size: 1.35rem;
 	font-weight: 700;
-	
+
 }
 
 h3{
 	font-size: 16px;
 	color: #333;
-	font-weight:700;	
+	font-weight:700;
 }
 
 
@@ -140,7 +140,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 10px 19px 3px 19px;
-	position: sticky; 
+	position: sticky;
 	top: 0;
 	z-index: 1;
 	background: white;
@@ -161,14 +161,12 @@ nav {
 
 .subscribe_btn {
   display: inline-block;
-  /*width: 95px;*/
   background-color: #326891;
   color: white;
   padding: 12px 8px;
   font-size: 11px;
   font-weight: 700;
   border-radius: 2px;
-  /*position: relative;*/
   bottom: 3px;
   margin-right: 10px;
 }
@@ -191,9 +189,6 @@ width:100%;
 }
 
 .main_picture figcaption{
-  font-size: .9rem;
-  line-height: 1.25;
-  color:#666;
   max-width: 720px;
 }
 
@@ -225,11 +220,11 @@ margin-bottom: 50px;
   display:flex;
   justify-content: space-between;
   align-items: center;
-	
+
 }
 
 .wrapper_data {
-  
+
   margin-top: 20px;
 }
 
@@ -239,23 +234,23 @@ margin-bottom: 50px;
   width: 150px;
   height: 43px;
   align-items: center;
-  
- 
+
+
 }
 
 
 .media .circle{
- 
+
  background: #eee;
- width: 27px; 
+ width: 27px;
  height: 27px;
  margin: 3px;
  display: flex;
  justify-content:center;
- align-items: center;	
+ align-items: center;
  border-radius: 100%;
  box-sizing: border-box;
- 
+
 }
 
 
@@ -267,8 +262,8 @@ margin-bottom: 50px;
 
 .tag_icons div.pennant:hover {
 
-	
-	
+
+
 }
 
 .tag_icons{
@@ -280,7 +275,7 @@ margin-bottom: 50px;
 
 
 .tag_icons .counter {
-	
+
 	border: solid 1px;
 	width: 36px;
 	height: 24px;
@@ -326,10 +321,17 @@ background: color: blue;
 
 /* Main Content */
 
+.youtube iframe{
+	width:560px;
+	height:315px;
+
+
+}
+
 .content {
 	width: 620px;
 	margin: auto;
-	
+
 }
 
 
@@ -340,15 +342,15 @@ figure.inflation_theory{
 	font-size: .815rem;
 	line-height: 1.125rem;
 
-	
+
 }
 
 .wrapper_inflation_theory{
 	background-image: url(images/inflation_theory.png);
-	background-repeat: no-repeat; 
+	background-repeat: no-repeat;
 	background-position: 0% 0%;
 	background-size: contain;
-	width: 100%; 
+	width: 100%;
 	height: 596px;
 	margin: auto;
 	display: block;
@@ -360,21 +362,13 @@ figure.inflation_theory{
 
 .dummy_figure{
 	height: 150px;
-	
+
 }
 
-figure.inflation_theory figcaption{
-	margin-top:50px;
-	color: #333;
-	font-weight:500;
-	font-size: .875rem;
-	
-	
-}
 
 figure.inflation_theory figcaption::before{
 	display: block;
-	width: 70px; 
+	width: 70px;
 	height:1 px;
 	border-top: solid.5px;
 	content: "";
@@ -387,7 +381,7 @@ figure.bicep2_telescop{
 	margin: auto;
 	font-size: .815rem;
 	line-height: 1.125rem;
-	
+
 }
 
 
@@ -396,11 +390,13 @@ figure.bicep2_telescop img{
 	margin: auto;
 }
 
-figure.bicep2_telescop figcaption {
+.bicep2_telescop figcaption,
+.youtube figcaption,
+.inflation_theory figcaption,
+.main_picture figcaption {
 	color: #666;
-	font-size: 13px;
-	line-height: 18px;
-	
+	font-size: 14px;
+	line-height: 20px;
 }
 
 /* aside */
@@ -439,8 +435,8 @@ decoration: none;
 
 
 .read_comments{
-	
-	width: 330px; 
+
+	width: 330px;
 	height: 36px;
 	display: flex;
 	justify-content: center;
@@ -459,8 +455,8 @@ decoration: none;
 
 div.read_comments:hover{
 	background:#326891;
-	
-	
+
+
 }
 /* featured section */
 
@@ -468,11 +464,11 @@ div.read_comments:hover{
 	color: #666
 }
 
-.featured{ 
+.featured{
 width: 100%;
 display:grid;
 grid-template-columns: 2.15fr .85fr;
-padding:50px calc(3% + 40px); 
+padding:50px calc(3% + 40px);
 }
 
 .featured_left{
@@ -480,15 +476,15 @@ padding:50px calc(3% + 40px);
 }
 
 .featured_right{
-	
+
 }
 
 .more_wrapper{
-	display: grid; 
+	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 18px;
-	justify-content:space-between;  
-	margin-top: 20px; 
+	justify-content:space-between;
+	margin-top: 20px;
 }
 
 
@@ -504,18 +500,18 @@ padding:50px calc(3% + 40px);
 
 
 .featured h3{
-	padding:20px 0 0; 
+	padding:20px 0 0;
 	margin-top: 20px;
 	border-top: 1px solid;
 	color: black;
 }
 
 .featured figcaption{
-	color: #999; 
-	display: flex; 
-	justify-content: right; 
+	color: #999;
+	display: flex;
+	justify-content: right;
 	font-size: .625rem;
-	margin: 5px auto; 
+	margin: 5px auto;
 }
 
 .featured .description{
@@ -526,8 +522,8 @@ padding:50px calc(3% + 40px);
 .featured .date{
 	font-size: 12px;
 	color: #999;
-	letter-spacing: 0.3px; 
-	margin-top: 2px; 
+	letter-spacing: 0.3px;
+	margin-top: 2px;
 }
 
 .picks_wrapper{
@@ -548,7 +544,7 @@ padding:50px calc(3% + 40px);
 }
 
 .most_popular_wrapper{
-	margin-top: 20px; 
+	margin-top: 20px;
 	font-size: 1.18rem;
 	line-height: 1.43rem;
 	display: grid;
@@ -572,16 +568,16 @@ footer a:hover{
 .home a:hover{
 	text-decoration: none;
 }
-footer{ 
+footer{
 width: 100%;
-padding:50px calc(3% + 40px); 
+padding:50px calc(3% + 40px);
 
 }
 
 .logo_icon_footer{
 	width: 184px;
 	height: 44px;
-	
+
 }
 
 .footer_logo{
@@ -592,7 +588,7 @@ padding:50px calc(3% + 40px);
 }
 
 .footer_wrapper{
-	display: flex; 
+	display: flex;
 	justify-content: space-between;
 }
 
@@ -616,9 +612,9 @@ footer::before{
 .list_title{
 	color: #333;
 	font-size: 13px;
-	font-weight: 700;	
+	font-weight: 700;
 
-	
+
 }
 
 .footer_wrapper .news li,
@@ -643,16 +639,16 @@ footer::before{
 	font-weight: 700;
 	font-size: 16px;
 	height: 25px;
-	
+
 }
 
 .subscribe > li:nth-child(2) > ul > li img {
 	margin-right: 3px;
 }
 
-.subscribe > li:nth-child(3), 
+.subscribe > li:nth-child(3),
 .subscribe > li:nth-child(4){
-	margin-top:15px;	
+	margin-top:15px;
 
 }
 .subscribe > li:nth-child(3) > ul > li,
@@ -664,11 +660,11 @@ footer::before{
 }
 
 .subscribe > li:nth-child(3){
-	border-bottom: solid  #E2E2E2 1px;	
+	border-bottom: solid  #E2E2E2 1px;
 }
 
 .subscribe {
-	border-left: solid #E2E2E2 1px;	
+	border-left: solid #E2E2E2 1px;
 	padding-left: 10px;
 }
 
@@ -678,7 +674,7 @@ footer::before{
 	font-size: 11px;
 	height: 23px;
 	line-height: 21px;
-	border-top: solid #E2E2E2 1px;	
+	border-top: solid #E2E2E2 1px;
 	margin-top: 10px;
 }
 
@@ -686,4 +682,3 @@ footer::before{
 	margin: 10px;
 	color: #666;
 }
-
