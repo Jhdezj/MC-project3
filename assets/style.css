@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: cheltenham;
-  src:url(fonts/cheltenham.otf);
+  src:url('fonts/cheltenham.otf');
 }
 
 *{
@@ -27,12 +27,8 @@ a:active {
 html{
 	font-family: georgia, serif;
 	font-size: 15px;
-	min-width: 1300px;
-	max-width: 1500px;
-}
-
-body{
-	font-size: 20.5%;
+	min-width: 1366px;
+	max-width: 1700px;
 }
 
 
@@ -315,7 +311,7 @@ content: "";
 display: block;
 position: absolute;
 top: 21px;
-left: 12.5px;
+left: 12px;
 width: 0;
 height: 0;
 border-top:  solid  white 3px;
@@ -689,3 +685,4 @@ footer::before{
 	margin: 10px;
 	color: #666;
 }
+
