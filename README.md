@@ -11,10 +11,9 @@ This project consists of replicating the [Space Ripples Reveal Big Bang’s Smok
 
 
 #### I. The project was based on a fixed layout:
- - The page was set to be displayed with a static width (1366px-1700px).
- - For mobile and tablet displays the page loads in a full screen size saving its original dimensions at a 1366px width.
- - No media queries were used.
-
+ - The page was set to be displayed with normal display on small desktop devices (1366px-1700px) and static display for bigger devices.
+ - For mobile and tablet displays the page loads in a full screen size saving its original dimensions at a 1024px width.
+ - The layout is very close to the original but is missing some minor details such as responsiveness, spacing, font types, and JavaScript effects.  
 
 #### II. The layout was built with HTML and CSS,  focusing on a static layout making use of:
  - Grid elements
@@ -38,7 +37,10 @@ This project consists of replicating the [Space Ripples Reveal Big Bang’s Smok
   It has the pictures and text featuring related articles.
 
   ###### &nbsp; The footer
-  It contains the links to other sections and articles, media links and the copyright notice.
+  It contains the links to other sections and articles, media links, and the copyright notice.
+
+  ###### &nbsp; The sticky footer
+  It contains a link to important announcements.
 
 ## Built With
 
