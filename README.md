@@ -49,7 +49,7 @@ This project consists of replicating the [Space Ripples Reveal Big Bang’s Smok
 
 ## Live Demo
 
-- [Live Demo Link](https://rawcdn.githack.com/Jhdezj/MC-project3/85cbd1134b69c2e784390de21cd77485ce7d79af/index.html)
+- [Live Demo Link](https://rawcdn.githack.com/Jhdezj/MC-project3/8e948a41c0cac9430fc5b87e13a9e15d6681c863/index.html)
 
 
 ## Author
